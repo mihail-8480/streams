@@ -165,14 +165,18 @@ export function createSubject<T>() {
   };
   return {
     notify: (item: T) => {
-      for (const sub of subscribers) {
-        sub(item);
-      }
+      setTimeout(() => {
+        for (const sub of subscribers) {
+          sub(item);
+        }
+      });
     },
     close: () => {
-      for (const sub of subscribers) {
-        sub(undefined);
-      }
+      setTimeout(() => {
+        for (const sub of subscribers) {
+          sub(undefined);
+        }
+      });
     },
     subject,
   };

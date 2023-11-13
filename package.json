@@ -1,6 +1,6 @@
 {
   "name": "@mojsoski/streams",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A type-safe data/event streaming library",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
